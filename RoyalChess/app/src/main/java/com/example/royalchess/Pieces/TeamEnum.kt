@@ -1,6 +1,6 @@
 package com.example.royalchess.Pieces
 
-enum class PieceTeam {
+enum class TeamEnum {
     WHITE,
     BLACK,
     RED,

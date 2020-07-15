@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OfflineMultiplayerGame"></activity>
-        <activity android:name=".SinglePlayerLobby" />
-        <activity android:name=".MultiplayerLobby" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".OfflineMultiPlayerGame" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".SinglePlayerLobby" android:screenOrientation="portrait" />
+        <activity android:name=".MultiplayerLobby" android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
