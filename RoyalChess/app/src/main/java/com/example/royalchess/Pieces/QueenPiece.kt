@@ -2,10 +2,12 @@ package com.example.royalchess.Pieces
 
 import com.example.royalchess.Position
 
-class KingPiece( gameBoard: GameBoard): Piece(PieceIdentity.King, gameBoard){
-    override fun updateValidMoves(){
+class QueenPiece(gameBoard: GameBoard): Piece(PieceIdentity.Queen, gameBoard){
+    override fun updateValidMoves(position: Position){
+        pos = position
 
         listOfValidPos.clear()
+        return
 
         var searchPositions = ArrayList<Position>()
 
@@ -17,8 +19,7 @@ class KingPiece( gameBoard: GameBoard): Piece(PieceIdentity.King, gameBoard){
             }
 
         for(searchPos in searchPositions)
-            if(gameBoard.getPieceAt(searchPos) != null)
-                listOfValidPos.add(searchPos)
+            listOfValidPos.add(searchPos)
 
 
     }
